@@ -20,7 +20,7 @@ namespace Load_sql_server
             Stopwatch sw = new Stopwatch();
             sw.Start();
             int counter = 0;
-            int countIterations = 5;
+            int countIterations = 100;
             while (counter != countIterations)
             {
                 using (SqlConnection conn = new SqlConnection(connStr))
